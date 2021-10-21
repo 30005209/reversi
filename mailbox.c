@@ -101,4 +101,13 @@ void mailbox_rec (mailbox *mbox,
 		  int *result, int *move_no, int *positions_explored)
 {
   /* your code goes here.  */
+  multiprocessor_wait(mbox->item_available);
+  multiprocessor_wait(mbox->mutex);
+
+  *result = mbox->data.result;
+  *move_no = mbox->data.move_no;
+  *positions_explored = mbox->data.positions_explored;
+
+  multiprocessor_signal(mbox->mutex);
+  multiprocessor_signal(mbox->item_available);
 }

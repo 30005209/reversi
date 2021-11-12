@@ -13,7 +13,7 @@
 # PARTICULAR PURPOSE.
 
 
-
+VPATH = ../reversi
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -136,12 +136,12 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/student/coursework/Reversi/missing aclocal-1.16
+ACLOCAL = ${SHELL} /home/student/Reversi/reversi/missing aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/student/coursework/Reversi/missing autoconf
-AUTOHEADER = ${SHELL} /home/student/coursework/Reversi/missing autoheader
-AUTOMAKE = ${SHELL} /home/student/coursework/Reversi/missing automake-1.16
+AUTOCONF = ${SHELL} /home/student/Reversi/reversi/missing autoconf
+AUTOHEADER = ${SHELL} /home/student/Reversi/reversi/missing autoheader
+AUTOMAKE = ${SHELL} /home/student/Reversi/reversi/missing automake-1.16
 AWK = mawk
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"reversi\" -DPACKAGE_TARNAME=\"reversi\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"reversi\ 1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"reversi\" -DVERSION=\"1.0\"
@@ -157,7 +157,7 @@ LIBOBJS =
 LIBS = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/student/coursework/Reversi/missing makeinfo
+MAKEINFO = ${SHELL} /home/student/Reversi/reversi/missing makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 PACKAGE = reversi
 PACKAGE_BUGREPORT = 
@@ -171,10 +171,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 1.0
-abs_builddir = /home/student/coursework/Reversi
-abs_srcdir = /home/student/coursework/Reversi
-abs_top_builddir = /home/student/coursework/Reversi
-abs_top_srcdir = /home/student/coursework/Reversi
+abs_builddir = /home/student/Reversi/build-reversi
+abs_srcdir = /home/student/Reversi/build-reversi/../reversi
+abs_top_builddir = /home/student/Reversi/build-reversi
+abs_top_srcdir = /home/student/Reversi/build-reversi/../reversi
 am__leading_dot = .
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
@@ -190,7 +190,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/student/coursework/Reversi/install-sh
+install_sh = ${SHELL} /home/student/Reversi/reversi/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -205,12 +205,12 @@ psdir = ${docdir}
 runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = .
+srcdir = ../reversi
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
-top_srcdir = .
+top_srcdir = ../reversi
 SUFFIXES = .c .o .obj .lo .a
 MY_DEPS = multiprocessor.o mailbox.o paro64bit.o
 OPT = -O0 -g
